@@ -17,11 +17,11 @@ const App: React.FC = () => {
   const dispatch = useAppDispatch();
 
   useEffect(() => {
-    if(!authApi.isAuthenticated()) {
+    if (!authApi.isAuthenticated()) {
       dispatch(setCurrentUser({}));
       authApi.logout();
     }
-  }, []);
+  }, [dispatch]);
 
   return (
     <>

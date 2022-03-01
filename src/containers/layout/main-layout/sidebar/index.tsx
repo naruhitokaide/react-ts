@@ -79,7 +79,7 @@ const Sidebar: React.FC = () => {
         history.push('/quick-sms');
         break;
     }
-  }, [selectedIndex]);
+  }, [selectedIndex, history]);
 
   return (
     <>
